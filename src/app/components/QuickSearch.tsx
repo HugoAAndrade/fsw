@@ -16,16 +16,16 @@ const QuickSearch = () => {
           <p className="text-sm text-grayPrimary">Hotel</p>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <Image width={35} height={35} src="/farm-icon.png" alt="hotel" />
-          <p className="text-sm text-grayPrimary">Hotel</p>
+          <Image width={35} height={35} src="/farm-icon.png" alt="fazenda" />
+          <p className="text-sm text-grayPrimary">Fazenda</p>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <Image width={35} height={35} src="/cottage-icon.png" alt="hotel" />
-          <p className="text-sm text-grayPrimary">Hotel</p>
+          <Image width={35} height={35} src="/cottage-icon.png" alt="chalé" />
+          <p className="text-sm text-grayPrimary">Chalé</p>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <Image width={35} height={35} src="/inn-icon.png" alt="hotel" />
-          <p className="text-sm text-grayPrimary">Hotel</p>
+          <Image width={35} height={35} src="/inn-icon.png" alt="pousada" />
+          <p className="text-sm text-grayPrimary">Pousada</p>
         </div>
       </div>
     </div>
