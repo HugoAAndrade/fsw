@@ -1,6 +1,7 @@
 "use client";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
@@ -19,13 +20,15 @@ const Header = () => {
 
   return (
     <header className="container mx-auto p-5 py-0 h-[92px] flex justify-between items-center">
-      <Image
-        priority
-        width={183}
-        height={32}
-        src="/logo.png"
-        alt="Full Stack Week"
-      />
+      <Link href="/">
+        <Image
+          priority
+          width={183}
+          height={32}
+          src="/logo.png"
+          alt="Full Stack Week"
+        />
+      </Link>
       {status === "unauthenticated" && (
         <button
           className="text-primary text-sm font-semibold"

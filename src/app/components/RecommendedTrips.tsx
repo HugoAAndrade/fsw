@@ -2,13 +2,13 @@ import TripItem from "@/components/TripItem";
 import { prisma } from "@/lib/prisma";
 import { Trip } from "@prisma/client";
 
-const fetchTrips = async () => {
+const getTrips = async () => {
   const trips = await prisma.trip.findMany();
   return trips;
 };
 
 const RecommendedTrips = async () => {
-  const data = await fetchTrips();
+  const data = await getTrips();
 
   return (
     <div className="container mx-auto p-5">
