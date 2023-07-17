@@ -1,5 +1,5 @@
 import { NextAuthProvider } from "@/providers/auth";
-import "./globals.css";
+import "./globals.scss";
 import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
 
