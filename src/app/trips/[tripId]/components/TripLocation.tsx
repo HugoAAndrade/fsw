@@ -9,7 +9,7 @@ interface TripLocationProps {
 const TripLocation = ({ location, locationDescription }: TripLocationProps) => {
   return (
     <div className="flex flex-col p-5">
-      <h2 className="font-semibold text-primaryDarker mb-5">Localização</h2>
+      <h2 className="font-semibold text-primaryDarker mb-3">Localização</h2>
       <div className="relative h-[280px] w-full">
         <Image
           src="/map-mobile.png"
