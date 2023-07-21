@@ -28,7 +28,7 @@ const TripHeader = ({ trip }: TripHeaderProps) => {
         </div>
         <p className="text-xs text-grayPrimary">
           <span className="text-primary font-medium">
-            R${trip.pricePerDay.toString()}{" "}
+            R$ {trip.pricePerDay.toString()}{" "}
           </span>{" "}
           por dia
         </p>
