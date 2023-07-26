@@ -2,11 +2,15 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  const router = useRouter();
+
   const { status, data } = useSession();
 
   const handleLoginClick = () => signIn();
@@ -52,9 +56,17 @@ const Header = () => {
             alt={data.user.name!}
           />
           {menuIsOpen && (
-            <div className="z-10 absolute top-14 left-0 w-full h-full bg-white rounded-lg shadow-md flex flex-col justify-center items-center">
+            <div className="z-10 absolute top-14 left-0 w-full h-[100px]  bg-white rounded-lg shadow-md flex flex-col justify-center items-center">
+              <Link href="/my-trips">
+                <button
+                  className="text-primary text-sm pb-2 border-b border-grayLighter font-semibold"
+                  onClick={handleMenuClick}
+                >
+                  Minhas viagens
+                </button>
+              </Link>
               <button
-                className="text-primary text-sm font-semibold"
+                className="text-primary text-sm font-semibold pt-2"
                 onClick={handleLogoutClick}
               >
                 Logout
