@@ -120,8 +120,8 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
           <p className="font-medium">R$ {totalPrice}</p>
         </div>
       </div>
-      <div className="flex flex-col mt-5">
-        <h3 className="font-semibold text-primaryDarker">Data</h3>
+      <div className="flex flex-col mt-5 text-primaryDarker">
+        <h3 className="font-semibold">Data</h3>
         <div className="flex gap-1 mt-1">
           <p>{format(startDate, "dd 'de' MMMM", { locale: ptBR })}</p>
           {" - "}
